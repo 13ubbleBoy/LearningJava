@@ -36,7 +36,7 @@ public class P14_ExceptionHanding {
 	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
 		
-		/*
+		
 		int a = 0;
 		
 		// try, catch block
@@ -114,7 +114,7 @@ public class P14_ExceptionHanding {
 		finally { // finally block is always written after catch block
 			System.out.println("finally block is always executes...");
 		}
-		*/
+		
 		
 		
 		
@@ -137,8 +137,11 @@ public class P14_ExceptionHanding {
 					Example : Dividing a number, if any time divisor becomes 0 then the program will get terminated
 							  saying Arithmetic Exception.
 		*/
-		
-		FileReader fr = new FileReader("/Library/Praveen");
+		try {
+			FileReader fr = new FileReader("/Library/Praveen/Demo.txt");
+		} catch(FileNotFoundException e) {
+			System.out.println("Message : " + e.getMessage());
+		}
 		
 		
 	}
