@@ -13,7 +13,7 @@ public class P9_Array {
 
 public static void main(String[] args) {
 
-	int[] array = { 1, 2, 3, 4, 5, 4, 6, 2, 3 };
+	int[] array = { 1, 2, 3, 4, 5, 4, 6, 2, 3, 2 };
 
 		QuestionsOnArray obj = new QuestionsOnArray();
 		obj.sortAnArray(array);
@@ -54,8 +54,10 @@ class QuestionsOnArray {
 	void findTheDuplicateElements(int[] arr) {
 		// write code here!
 		int size = arr.length;
+		int same = -10000;
 		for(int i=0; i<size-1; i++) {
-			if(arr[i] == arr[i+1]) {
+			if(arr[i] == arr[i+1] && arr[i] != same) {
+				same = arr[i];
 				System.out.println(arr[i] + " is the duplicate element");
 			}
 		} System.out.println();

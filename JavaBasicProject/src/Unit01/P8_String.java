@@ -22,8 +22,8 @@ public class P8_String {
 
 		QuestionsOnString obj = new QuestionsOnString();
 
-		String s1 = new String("75457");
-		String s2 = new String("7545a");
+		String s1 = new String("754579");
+		String s2 = new String("754579");
 
 		obj.palindromeOrNot(s1);
 		obj.reverseOfAString(s1);
@@ -45,13 +45,12 @@ class QuestionsOnString {
 			if(s.charAt(i) == s.charAt(size-i-1)) {
 				flag = true;
 			} else {
-				flag = false;
+				System.out.println("The string '" + s + "' is NOT a palindrome");
+				return;
 			}
 		}
 		if(flag == true) {
 			System.out.println("The string '" + s + "' is a palindrome");
-		} else {
-			System.out.println("The string '" + s + "' is NOT a palindrome");
 		}
 
 	}
