@@ -39,11 +39,12 @@ public class P3_Task02_OperatorsInJava {
 		
 		// Bitwise Operators
 		System.out.println("\nBitwise Operators");
-		System.out.println(2 & 1);
-		System.out.println(2 | 3);
-		System.out.println(1 ^ 3);
+		System.out.println(2 & 1);  // AND
+		System.out.println(2 | 3);  // OR
+		System.out.println(1 ^ 3);  // XOR
 		
 		// Logical Operators
+		System.out.println("\nLogical Operators");
 		System.out.println(2>1 && 1<3);
 		System.out.println(3>5 || 5<9);
 		
@@ -63,11 +64,11 @@ public class P3_Task02_OperatorsInJava {
 		System.out.println(a1);
 		a1 /= 2; // a = a/2;
 		System.out.println(a1);
-		a1 &= 1;
+		a1 &= 1;  // a = a AND 1 (1001 AND 0001) = 1
 		System.out.println(a1);
-		a1 ^= 1;
+		a1 ^= 1;  // a = a XOR 1 (0001 XOR 0001) = 0
 		System.out.println(a1);
-		a1 |= 1;
+		a1 |= 1;  // a = a OR 1 (0000 OR 0001) = 1
 		System.out.println(a1);
 		a1 <<= 1;
 		System.out.println(a1);

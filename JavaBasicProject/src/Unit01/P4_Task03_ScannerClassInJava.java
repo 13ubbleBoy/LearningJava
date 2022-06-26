@@ -15,7 +15,7 @@ public class P4_Task03_ScannerClassInJava {
 		
 		sc.close(); // As soon as the block in which you defined Scanner object is over the garbage collection does your job for you.
 		sc2.close(); // But until it is done the resources allocated for Scanner are still there and will be there until block(or process) is over.
-		// To optimize your code( to make it faster and efficient) it is better to close() objects as soon as their work is done.
+		// To optimise code( to make it faster and efficient) it is better to close() objects as soon as their work is done.
 	}
 
 }

@@ -24,6 +24,9 @@ public class P3_Task01_staticVariables_and_type_Conversion_Casting {
 		o1.msg1();
 		o1.msg2();
 		
+		P3_Task01_staticVariables_and_type_Conversion_Casting o2 = new P3_Task01_staticVariables_and_type_Conversion_Casting();
+		o2.msg1();
+		
 		// Type Conversion
 		int i = 20;
 		long l = i; // This is called TYPE CONVERSION
@@ -39,13 +42,13 @@ public class P3_Task01_staticVariables_and_type_Conversion_Casting {
 		
 	}
 	
-	void msg1(){ // msg1 has a separate copy of 'num'
+	void msg1(){ // msg1 has a separate copy of 'num' that belongs to the object
 		System.out.println(num);
 		num = 90; // instance variable
 		System.out.println(num);
 	}
 	
-	void msg2(){ // msg2 has a separate copy of 'num'
+	void msg2(){ // msg2 has a separate copy of 'num' that belongs to the object
 		System.out.println(num);
 		num = 50; // instance variable
 		System.out.println(num);

@@ -22,7 +22,7 @@ class Statements{
 		System.out.println("If else statement ------------");
 		int a = 10, b = 20;
 		if(a < b) {
-			System.out.println("A is greater");
+			System.out.println("A is smaller");
 		} else {
 			System.out.println("B is greater");
 		}

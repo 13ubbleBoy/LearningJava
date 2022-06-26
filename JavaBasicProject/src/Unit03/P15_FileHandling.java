@@ -17,16 +17,19 @@ public class P15_FileHandling {
 
 	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
+		
 		B b1 = new B();
+		
+		// Reading a file : 1
 		//b1.takeInputFromAFile();
 		
 		
-		// Writing into a file
+		// Writing into a file : 2
 		//b1.saveOutputIntoAFile();
 		
 		
 		
-		// Saving output with time and date
+		// Saving output with time and date : 3
 		//b1.saveLogOfProgram();
 		
 		
@@ -38,14 +41,13 @@ public class P15_FileHandling {
 }
 
 class B{
-	static int a = 10;
+	static int a = 0;
 	
 	void takeInputFromAFile() throws IOException { // If file is not available then it will show error an IOException
 		String path = "/Users/praveenkumar/git/LearningJava/JavaBasicProject/src/Unit03/demo.txt";
 		File file = new File(path);
 		
 		BufferedReader br = new BufferedReader(new FileReader(file));
-		
 		
 		String s;
 		while((s = br.readLine()) != null) {

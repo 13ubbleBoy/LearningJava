@@ -1,5 +1,4 @@
 package Unit01;
-import java.util.Scanner;
 
 /* Problem Statement:
 

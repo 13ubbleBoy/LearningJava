@@ -4,7 +4,9 @@ public class P5_Task02_MethodsInJava {
 
 	public static void main(String[] args) {
 		classInP5 obj = new classInP5();
-		obj.display1(); // we can also call static methods by objects
+		obj.display1();
+		int a = obj.display2();
+		classInP5.display1(); // static method
 		System.out.println(obj.a);
 		
 	}

@@ -30,16 +30,13 @@ class A{
 	}
 }
 
-
 class B extends A{ // Single inheritance 'A -> B'
 	int number;
-	
 	/*	// If default constructor is not present then parameterized constructor will be called automatically
 	B(){ // A method which is called automatically after object is created
 		System.out.println("Constructor of class B");
 	}
 	*/
-	
 	B(int x){
 		System.out.println("Parameterized Constructor of B");
 	}
@@ -48,7 +45,6 @@ class B extends A{ // Single inheritance 'A -> B'
 		System.out.println("Hi, how are you ?");
 	}
 }
-
 
 class C extends B{ // Multilevel inheritance 'A -> B -> C'
 	int n;

@@ -52,7 +52,7 @@ class SharedResource {
 			try {
 				wait(); // This function will wait tell any thread notifies it that the condition is favourable
 			} catch (Exception e) {
-				
+				System.out.println(e.getMessage());
 			}
 		}
 		this.amount -= amount;

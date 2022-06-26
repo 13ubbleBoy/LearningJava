@@ -3,13 +3,13 @@ package Unit01;
 public class P5_Task01_ClassAndObjectInJava {
 
 	public static void main(String[] args) {
-		newClass obj = new newClass();
-		obj.display1(); // 'display()1' is not a static method, thats why we require object to call it
+		newClass obj = new newClass(); // Objects are instance of a class, no memory is provided until we create an object.
+		obj.display1();
 		
-		newClass.display2(); // 'display2()' was a static method, thats why there is no need for object to call this method
+		newClass.display2(); // As display2() is a static method that why we can call it by using its class name
 
 	}
-
+	
 }
 
 class newClass{
